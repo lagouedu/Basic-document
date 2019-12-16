@@ -16,7 +16,7 @@ l 什么是Spring
 
 Spring在经典三层中的位置，各个层都有体现
 
-![1576486441509](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/png1576486441509.png)
+![1576486441509](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/1576486441509.png)
 
  
 
@@ -38,7 +38,7 @@ l Spring的优势
 
 l Spring的框架结构
 
-![1576486464862](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/png1576486464862.png)
+![1576486464862](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/1576486464862.png)
 
 注意：Spring是一个模块化的框架，它的功能很强大，但是并不要求你完全都得用，图中每一个圆角矩形都代表一个jar，使用哪些模块引入哪些模块即可
 
@@ -74,11 +74,11 @@ l 关于程序耦合(有一个认识即可)
 
 l service层调用dao层存在耦合，解耦合分析过程
 
-![1576486495348](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/png1576486495348.png)
+![1576486495348](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/1576486495348.png)
 
 l 需要实例化的类的全限定类名配置在xml中，便于工厂使用反射技术实例化对象
 
-![1576486507775](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/png1576486507775.png)
+![1576486507775](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/1576486507775.png)
 
 l 使用工厂模式解耦合，分析并完成工厂类的两大任务
 
@@ -155,7 +155,7 @@ public class BeanFactory {
 
 l 从IOC容器获取对象相比原有方式对比
 
-![1576486534430](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/png1576486534430.png)
+![1576486534430](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/1576486534430.png)
 
  
 
@@ -252,7 +252,7 @@ l 生命周期属性
 
 bean即对象，对象就有生命周期，生命周期就有开始和结束，有时候希望在对象创建之后立马做点啥，或者销毁之前做事情	
 
-![1576486574789](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/png1576486574789.png)
+![1576486574789](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/1576486574789.png)
 
  
 
@@ -260,11 +260,11 @@ l 对象创建的三种方式
 
 通过配置class全限定类名框架底层使用反射技术来创建对象(经常使用，推荐)
 
-![1576486587009](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/png1576486587009.png)
+![1576486587009](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/1576486587009.png)
 
 静态方法自己new对象，然后加入到Spring的对象容器中管理）
 
-| ![img](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/pngwpsZf4iY4.jpg) |
+| ![img](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/wpsZf4iY4.jpg) |
 | ------------------------------------------------------------ |
 |                                                              |
 
@@ -286,7 +286,7 @@ public class StaticFactory {
 
 动态实例化方法（自己new对象，然后加入到Spring的对象容器中管理）（需要首先定义工厂的bean，然后通过工厂bean对象调用里面的方法返回具体对象）
 
-| ![img](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/pngwpsHrlXeF.jpg) |
+| ![img](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/wpsHrlXeF.jpg) |
 | ------------------------------------------------------------ |
 |                                                              |
 
@@ -312,15 +312,15 @@ DI: dependence Inject （依赖注入），注入对象所依赖的对象
 
 ### Set注入(也叫设值注入，这是常用和推荐的用法)
 
-| ![img](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/pngwpshChfOE.jpg) |
+| ![img](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/wpshChfOE.jpg) |
 | ------------------------------------------------------------ |
-| ![img](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/pngwpsScXrx1.jpg) |
+| ![img](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/wpsScXrx1.jpg) |
 
  
 
 ### 构造函数注入
 
-![1576486619009](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/png1576486619009.png)
+![1576486619009](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/1576486619009.png)
 
  
 
@@ -423,7 +423,7 @@ dbutils工具
 
 c3p0/dbcp数据库连接池
 
-![1576486642403](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/png1576486642403.png)
+![1576486642403](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/1576486642403.png)
 
 Apache提供的一个数据库连接池
 
@@ -441,7 +441,7 @@ service层开发
 
 使用Spring-context容器功能***\*管理涉及到的所有对象及其依赖注入关系\****
 
-![1576486657718](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/png1576486657718.png)
+![1576486657718](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/1576486657718.png)
 
 每一个方块或者椭圆都是一个对象（需要定义bean），然后维护他们的注入关系
 
@@ -484,7 +484,7 @@ xml中配置如下
 
 l DBCP数据库连接池
 
-![1576486676899](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/png1576486676899.png)
+![1576486676899](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/1576486676899.png)
 
 注意：所有的数据库连接池使用套路都一样，都是使用其中一个核心类，然后赋值必要的数据库连接四要素
 
@@ -511,19 +511,19 @@ l 依赖注入的注解实现方式
 
 按照类型注入
 
-![1576486697145](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/png1576486697145.png)
+![1576486697145](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/1576486697145.png)
 
 n @Resource注解（JDK提供）
 
 按照id注入
 
-![1576486705999](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/png1576486705999.png)
+![1576486705999](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/1576486705999.png)
 
 使用Resource注解的name属性来指定注入对象的id
 
 l 开启注解扫描开关
 
-![1576486719178](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/png1576486719178.png)
+![1576486719178](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/1576486719178.png)
 
  
 
@@ -583,7 +583,7 @@ l 半注解：自己开发的类定义bean使用注解方式
 
 **l** 容器初始化不是加载xml的方式了（纯注解不存在xml文件了）
 
-![1576486770371](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/png1576486770371.png)
+![1576486770371](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/1576486770371.png)
 
 
 
@@ -740,7 +740,7 @@ public class MainTest {
 
 读取xml配置文件启动的形式
 
-![1576486797031](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/png1576486797031.png)
+![1576486797031](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/1576486797031.png)
 
 最终，让我们非常方便的注入对象，测试对象
 
@@ -756,11 +756,11 @@ AOP：Aspect Oriented Programming（面向切面编程/面向方面编程）
 
 Horse类、Cat类、Dog类，都有eat()、run()方法，抽取父类（Animal类），在父类中写上重复的代码，这样避免了代码重复问题
 
-![1576486808880](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/png1576486808880.png)
+![1576486808880](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/1576486808880.png)
 
 大多数情况下OOP编程都能够满足我们的需求，但是事情不是简单的，在一些场合使用OOP思想来解决代码重复问题，已经不行了
 
-![1576486819773](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/png1576486819773.png)
+![1576486819773](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/1576486819773.png)
 
 横切代码存在什么问题？
 
@@ -773,7 +773,7 @@ AOP别出心裁的提出了横向抽取机制，把业务代码和横切代码�
 
 AOP的底层实现原理：动态代理技术；
 
- ![1576486834861](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/png1576486834861.png)
+ ![1576486834861](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/1576486834861.png)
 
  
 
@@ -1188,7 +1188,7 @@ l applicationContext.xml配置
 
 l 切入点表达式说明（切入点表达式语法使用的是AspectJ框架的表达式语法）
 
-![img](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/pngwpsXp2qJ4.jpg) 
+![img](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/wpsXp2qJ4.jpg) 
 
 l XML配置及四种常用Advice通知类型（即四种方位）
 
@@ -1257,7 +1257,7 @@ l 半xml半注解形式
 
 在xml配置文件中开启AOP注解开关
 
-![1576486895440](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/png1576486895440.png)
+![1576486895440](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/1576486895440.png)
 
 在横切逻辑类上配置
 
@@ -1668,7 +1668,7 @@ Dao层实现类直接继承JdbcDaoSupport父类，从父类中获取JdbcTemplate
 
 dao实现类中继承JdbcDaoSupport父类
 
-![1576486942968](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/png1576486942968.png)
+![1576486942968](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/1576486942968.png)
 
  
 
@@ -1676,7 +1676,7 @@ dao实现类中继承JdbcDaoSupport父类
 
 ## Spring内置数据源
 
-![1576486954802](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/png1576486954802.png)
+![1576486954802](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/1576486954802.png)
 
  
 
@@ -1746,7 +1746,7 @@ l 事务传播行为
 
 A调用B，我们站在B的角度来观察来定义事务的传播行为
 
-![1576486977541](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/png1576486977541.png)
+![1576486977541](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/1576486977541.png)
 
  
 
@@ -1793,7 +1793,7 @@ Spring针对上述众多的事务调用方式，为了一统江湖，定义顶�
 
 针对不同的技术体系，封装不同的事务管理实现类
 
- ![1576486989875](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/png1576486989875.png)
+ ![1576486989875](https://github.com/lagouedu/Basic-document/blob/master/img-folder/Spring/1576486989875.png)
 
  
 
